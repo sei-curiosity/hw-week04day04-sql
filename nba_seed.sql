@@ -24,8 +24,6 @@ INSERT INTO players (name, age, team, games, points) VALUES ('Anderson Varejao',
 ----------------------------------
 -- Part 2
 -- Uncomment COPY players statement and modify it with YOUR file path!
-
-
 COPY players
 (name, age, team, games, points)
 FROM '/Users/mattgershowitz/code/wdi/turtle/homeworks/hw-u02-d06-psql_nba_style/nba_season_2011_2012.csv'
