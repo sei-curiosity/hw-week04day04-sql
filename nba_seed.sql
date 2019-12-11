@@ -2,19 +2,27 @@
 -- Part 1
 
 -- Drop DB if exists
-DROP DATABASE IF EXISTS nba_db;
+  DROP DATABASE IF EXISTS nba_db;
 
 -- Create DB nba_db
-CREATE DATABASE nba_db;
+  CREATE DATABASE nba_db;
 
 -- Connect to nba_db
-\c nba_db;
+    \c nba_db;
 
 -- Create table here
 
+CREATE TABLE players(
+name varchar(50),
+age integer,
+team varchar(10),
+games integer,
+points integer
+);
 
 -- Insert player here
 
+INSERT INTO players (name,age,team,games,points) VALUES ('Anderson Varejao',29,'CLE',25 , 271);
 
 ----------------------------------
 -- Part 2
