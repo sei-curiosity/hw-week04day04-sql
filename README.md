@@ -52,10 +52,11 @@ Let's start by **creating** an empty PSQL database called `nba_db` and then **se
 * Create a table called `players` with columns for
 
   * `name`
-  * `age`
+  * `age`\
   * `team`
   * `games`
   * `points`
+   CREATE TABLE players (name varchar(20), age integer, team varchar, games varchar, point varchar);
 
   **HINT**
 
@@ -63,6 +64,7 @@ Let's start by **creating** an empty PSQL database called `nba_db` and then **se
 
 * Insert the player:<br>
   `Anderson Varejao, age: 29, team: CLE, games: 25, points: 271`
+  insert into players (name, age, team, games, point) VALUES ('Anderson Varejao', 29, 'CLE', 25, 271);
 
 4. Save your `nba_seed.sql` file
 5. Run `nba_seed.sql` by entering the following command into the terminal:
