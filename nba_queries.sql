@@ -5,34 +5,34 @@
 
 -- All columns for all players from the New York Knicks (NYK).
 
-
+    select team from player where team LIKE 'NYK%';
 
 -- All columns for all players from the Indiana Packers (IND) who are under 26
 -- years old.
-
+    select * FROM player WHERE team ='IND' AND age<=26;
 
 
 -- All columns for all players, ordered from least points scored to most points
 -- scored.
 
-
+    select * from player ORDER by points ASC;
 
 -- Name and Points per game (points/games), for the players with the top 20 points
 -- per game.
-
-
+ 
+    select name, points/games from player order by points/games DESC limit 20;
 
 -- The average age for all players.
 
-
+    select AVG(age) from player;
 
 -- The average age for all players on the Oklahoma City Thunder (OKC).
 
-
+    select AVG(age) from player where team ='OKC';
 
 -- The average age for all players who played more than 40 games.
 
-
+    select AVG(age) from player where games < 40;
 
 
 --------------------------------------------
