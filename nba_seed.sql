@@ -11,17 +11,14 @@ CREATE DATABASE nba_db;
 \c nba_db;
 
 -- Create table here
-
+CREATE TABLE players (id SERIAL PRIMARY KEY, name TEXT, age INTEGER, team TEXT, games INTEGER, points INTEGER);
 
 -- Insert player here
+INSERT INTO players (name, age, team, games, points) VALUES ('Anderson Varejao', 29, 'CLE', 25, 271);
 
-
+-- SELECT * FROM players;
 ----------------------------------
 -- Part 2
 -- Uncomment COPY players statement and modify it with YOUR file path!
 
-
---COPY players
-  --(name, age, team, games, points)
---FROM '/Users/mattgershowitz/code/wdi/turtle/homeworks/hw-u02-d06-psql_nba_style/nba_season_2011_2012.csv'
-    --DELIMITER ',' CSV;
+COPY players (name, age, team, games, points) FROM '/Users/honeytheshine/Desktop/sei/homeworks/week04/hw-week04day04-sql/nba_season_2011-2012.csv' DELIMITER ',' CSV;
