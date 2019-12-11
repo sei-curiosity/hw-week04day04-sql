@@ -57,6 +57,7 @@ Let's start by **creating** an empty PSQL database called `nba_db` and then **se
   * `games`
   * `points`
 
+
   **HINT**
 
   > What datatypes should each of these columns be?
