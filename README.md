@@ -87,7 +87,7 @@ $ psql -f nba_seed.sql
 
 **For Parts 3 and 4, work in the `nba_queries.sql` file. Run the file to test your answers by using `psql -f nba_queries.sql`**
 
-Some of the prompts may go a little further than what we saw in class, but should be very easy to Google and figure out. Some useful things to look up:
+Some of the prompts may go a little further including or excluding what we covered in class, If unsure you can easily Google and figure out. Some useful things to look up:
 
 * WHERE
 * ORDER BY
