@@ -2,7 +2,7 @@
 -- Part 3 - Basic SQL Queries
 -- write queries to select the following
 --------------------------------------------
-
+\c nba_db
 -- All columns for all players from the New York Knicks (NYK).
 SELECT * FROM players WHERE Team = 'NYK';
 
@@ -46,7 +46,7 @@ SELECT AVG(age) from players where games > 40;
 -- The team and total points scored from all players on that team (team points)
 -- ordered from most team points to least.
 
-SELECT team, SUM (Points) FROM players GROUP BY team;
+-- SELECT team, SUM (Points) FROM players GROUP BY DESC;
 
 -- The age and the average points per game for that age, ordered from oldest to
 -- youngest for all ages.
