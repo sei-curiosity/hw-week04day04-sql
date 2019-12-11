@@ -57,4 +57,4 @@ SELECT Age, AVG(points/games) FROM players GROUP BY Age ORDER BY Age DESC;
 -- The team and the the number of players who score above 12 points per game on
 -- that team, ordered from the most number of players to the least number of players.
 
---  SELECT name from players where team Points < 12 order by ASC;
+SELECT team, COUNT(name) as NumberOfPlayers FROM players WHERE (points/games)>12 group by team ORDER BY NumberOfPlayers DESC;

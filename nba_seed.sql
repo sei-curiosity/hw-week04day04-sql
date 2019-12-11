@@ -31,5 +31,4 @@ COPY players
   (name, age, team, games, points)
 FROM '/Users/mashael/Desktop/sei/homeworks/hw-week04day04-sql/nba_season_2011-2012.csv'
     DELIMITER ',' CSV;
-    
- SELECT name from players where team Points < 12 order by ASC;
+
