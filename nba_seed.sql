@@ -12,14 +12,20 @@ CREATE DATABASE nba_db;
 
 -- Create table here
 
-
+CREATE TABLE players(
+name text,
+age integer,
+TEAM text,
+Game integer,
+POINTS integer
+);
 -- Insert player here
 
 
 ----------------------------------
 -- Part 2
 -- Uncomment COPY players statement and modify it with YOUR file path!
-
+nba_db=# \copy players(name, age, team,game,points) FROM '/Users/mohammedshatry/SEI/homeworks/hw-week04day04-sql/nba_season_2011-2012.csv' WITH (FORMAT csv, HEADER false)
 
 --COPY players
   --(name, age, team, games, points)
