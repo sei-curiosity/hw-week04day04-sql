@@ -12,8 +12,12 @@ CREATE DATABASE nba_db;
 
 -- Create table here
 
-
+CREATE TABLE players ( name varchar,age integer, team varchar , games varchar, point varchar );
 -- Insert player here
+
+ insert into players (name , age , team, games, point ) values ( 'Anderson Varejao' , 29 , 'CLE', 25 , 271 );
+ 
+
 
 
 ----------------------------------
@@ -22,6 +26,6 @@ CREATE DATABASE nba_db;
 
 
 --COPY players
-  --(name, age, team, games, points)
---FROM '/Users/mattgershowitz/code/wdi/turtle/homeworks/hw-u02-d06-psql_nba_style/nba_season_2011_2012.csv'
-    --DELIMITER ',' CSV;
+  -- (name, age, team, games, points)
+FROM '/Users/mashail/Desktop/sei/homework/hw-week04day04-sql/nba_season_2011-2012.csv'DELIMITER ',' CSV;
+ 
