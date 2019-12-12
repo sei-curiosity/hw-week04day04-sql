@@ -1,20 +1,17 @@
 ----------------------------------
 -- Part 1
 
--- Drop DB if exists
-DROP DATABASE IF EXISTS nba_db;
-
--- Create DB nba_db
-CREATE DATABASE nba_db;
-
--- Connect to nba_db
-\c nba_db;
-
--- Create table here
+-- --Create table players(
+-- name TEXT,
+-- age INTEGER,
+-- team TEXT,
+-- games INTEGER,
+-- points INTEGER
+-- );
 
 
 -- Insert player here
-
+\copy players(name,age,team, games, points) FROM '/Users/rana/Desktop/sei/homeworks/hw1/week4/hw-week04day04-sql/nba_season_2011-2012.csv' WITH (FORMAT csv, HEADER true)
 
 ----------------------------------
 -- Part 2

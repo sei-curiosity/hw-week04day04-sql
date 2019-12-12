@@ -5,7 +5,13 @@
 
 -- All columns for all players from the New York Knicks (NYK).
 
-
+select * from players where team='NYK';
+select * from players where team='IND'and age =26;
+select * from players order by points asc;
+select * from players avg(age) ;
+select * from players avg(age) where team='OKC' ;
+select * from players avg(age) where games=40 ;
+select MAX(points) from players group by (name,games)limit 20;
 
 -- All columns for all players from the Indiana Packers (IND) who are under 26
 -- years old.
