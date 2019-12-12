@@ -19,7 +19,7 @@ SELECT * FROM players ORDER BY points;
 
 -- Name AND Points per game (points/games), for the players with the top 20 points
 -- per game.
-SELECT name, points/games as points_per_game  FROM players ORDER BY points DESC LIMIT 20;
+SELECT name, points/games as points_per_game  FROM players ORDER BY points_per_game DESC LIMIT 20;
 
 
 -- The average age for all players.
